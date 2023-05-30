@@ -1,6 +1,8 @@
 import "./App.css";
-import img0 from "./assets/img/cookie.jpg";
+
 import products from "./products";
+import Title from "./components/Title";
+import Body from "./components/Body";
 function App() {
   const productsList = products.map((product) => {
     return (
@@ -14,9 +16,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1> Cookies and Beyond </h1>
-      <p> Where cookie maniacs gather </p>
-      <img src={img0} alt="cookie" />
+      <Title />
+      <Body />
       {productsList}
     </div>
   );
